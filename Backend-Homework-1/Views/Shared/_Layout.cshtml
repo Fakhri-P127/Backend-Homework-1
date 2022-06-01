@@ -1,0 +1,29 @@
+﻿@{
+    ViewBag.Title = "`sa`";
+
+}
+
+<!DOCTYPE html>
+
+<html>
+<head>
+    <meta name="viewport" content="width=device-width" />
+    <title>@ViewBag.Title</title>
+</head>
+<body>
+    <p>✌✌✌✌✌</p>
+
+   
+    <p>@DateTime.Now</p>
+    <div>
+        @RenderBody()
+    </div>
+    <script>
+        const time = {
+            name: @ViewBag.Title ,
+        }
+        console.log(time);
+        @*console.log(@ViewBag.Title)*@
+    </script>
+</body>
+</html>
